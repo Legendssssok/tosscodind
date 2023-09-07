@@ -1,0 +1,11 @@
+{
+    "name":"Toss",
+    "description":"Toss Motion",
+    "repository":"https://github.com/",
+    "env": {
+        "LOL":{
+            "description": "Get your soon",
+            "value":"828"
+        }
+    }
+}
