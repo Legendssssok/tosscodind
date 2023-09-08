@@ -23,7 +23,7 @@ def send_os(client, message):
 @app.on_message(filters.command(["vtoss"]))
 def send_wesnos(client, message):
     chat_id = message.chat.id
-    chat_info = await bot.get_chat(MUST_JOIN)
+    chat_info = await bot.get_chat(chat_id)
     invite_link = chat_info.invite_link
     try:
         lol = store_future[chat_id]
