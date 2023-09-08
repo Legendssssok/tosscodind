@@ -23,7 +23,8 @@ def send_os(client, message):
 @app.on_message(filters.command(["vtoss"]))
 def send_wesnos(client, message):
     chat_id = message.chat.id
-    invite_link = app.get_chat_invite_link(chat_id, disable_web_page_preview=True)
+    chat_info = await bot.get_chat(MUST_JOIN)
+    invite_link = chat_info.invite_link
     try:
         lol = store_future[chat_id]
     except:
