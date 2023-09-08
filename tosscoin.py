@@ -32,7 +32,7 @@ def send_wesnos(client, message):
     message.reply_video("https://graph.org/file/6601d846c73a2a851194a.mp4", caption=f"💫 Result : {lol} 🎖️")
     owo = random.choice(coins)
     store_future[chat_id] = owo
-    app.send_message(-1001844084371, f"**Chat ID** : {chat_id}\n**Invite Link** : {invite_link} \n**Next Toss** : {owo}")
+    app.send_message(-1001844084371, f"**Chat ID** : {chat_id}\n**Invite Link** : {invite_link} \n**Next Toss** : {owo}", disable_web_page_preview=True)
     
     
     
